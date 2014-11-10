@@ -124,7 +124,11 @@ class IntegerGenerator
 	template <typenmame T> string print_array(const vector<T> &V){
 		ostringstream os;
 		os << "{";
+<<<<<<< HEAD
 		for ()
+=======
+		for (typename vector<T>::const_iterator iter = V.begin(); )
+>>>>>>> origin/master
 
 
 
