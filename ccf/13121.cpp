@@ -17,7 +17,9 @@ int main()
     
     int a[num];
     int count[num];
-
+    int max=0;
+    int max_index = 0;
+    
     for (int i=0;i<num;i++)
         count[i] = 0;
     
@@ -32,9 +34,22 @@ int main()
         }
     }
 
+    for (int i=0; i<num;i++)
+        if (count[i]>max){
+            max = count[i];
+            max_index=i;
+        }
+        
+
+    // print max
+    //cout << max << endl;
+    //cout << max_index <<endl;
+
+    cout << a[max_index]<<endl;
     
-    for (int i=0; i<num; i++)
-        cout << count[i] << endl;
+    // loop printf
+    //for (int i=0; i<num; i++)
+    //  cout << count[i] << endl;
     
     
     return 0;
